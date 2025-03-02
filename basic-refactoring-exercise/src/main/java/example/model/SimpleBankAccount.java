@@ -34,7 +34,7 @@ public class SimpleBankAccount implements BankAccount {
     @Override
     public void withdraw(final int userID, final double amount) {
         if (checkUser(userID) && isWithdrawAllowed(amount)) {
-            this.balance -= amount;
+            this.balance -= amount + 1; // Exercise 1 step 4: withdrawal fee of 1euro
         }
     }
 
