@@ -1,5 +1,7 @@
 package tdd;
 
+import java.util.List;
+
 /**
  *  Task 3 - TDD for Circular Queue
  *  A simple CircularQueue that stores integers with a **fixed** capacity.
@@ -13,4 +15,11 @@ package tdd;
  *   - Introduce methods in the interface in order to make the tests pass.
  *   - Refactor
  */
-public interface CircularQueue { }
+public interface CircularQueue {
+    public void push(int value);
+    public int pop();
+    public int peek();
+
+
+
+}
